@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "drive"
+version = "0.1.0"
+description = ""
+authors = ["gideonmandu <gideonmandu@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+google-api-python-client = "^2.38.0"
+google-auth-httplib2 = "^0.1.0"
+google-auth-oauthlib = "^0.5.0"
+python-dotenv = "^0.19.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.1"
+black = "^22.1.0"
+rich = "^11.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
