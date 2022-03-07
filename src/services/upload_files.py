@@ -18,6 +18,15 @@ def check_file_name_in_csv(
     csv_file: str,
     file_name: str,
 ) -> list[str | dict[str, str]]:
+    """Check if file name exists in csv file
+
+    :param csv_file: csv path with name
+    :type csv_file: str
+    :param file_name: name of google drive file
+    :type file_name: str
+    :return: array of file parameters
+    :rtype: list[str | dict[str, str]]
+    """
     with open(csv_file, newline="", encoding="utf-8") as f:
         reader = csv.reader(f)
         try:
@@ -30,11 +39,15 @@ def check_file_name_in_csv(
             sys.exit(f"file {csv_file}, line {reader.line_num}: {e}")
 
 
-# Local files Folder Path
-path = f"{os.getcwd()}/files"
-
 # Read File name
 def read_file_name(file_path: str) -> str:
+    """Read name of file from path
+
+    :param file_path: file path
+    :type file_path: str
+    :return: file name
+    :rtype: str
+    """
     file_name = None
     with open(file_path, "r") as f:
         file_name = f.name.split("/")[-1]
@@ -43,6 +56,15 @@ def read_file_name(file_path: str) -> str:
 
 
 def callback(request_id, response: dict[str, Any], exception) -> None:
+    """Error logger and status updater for file permission update success
+
+    :param request_id: request identifier
+    :type request_id: _type_
+    :param response: responce object from api
+    :type response: dict[str, Any]
+    :param exception: exception object 
+    :type exception: _type_
+    """
     if exception:
         # Handle error
         logger.error(print(f"{exception} :rotating_light:"))
@@ -56,6 +78,13 @@ def add_permissions(
     file_id: str,
     file_info: list[str | dict[str, str]],
 ) -> None:
+    """Adds permissions in batches to google drive file
+
+    :param file_id: drive file identifier
+    :type file_id: str
+    :param file_info: file parameters to update
+    :type file_info: list[str  |  dict[str, str]]
+    """
     try:
         drive_service = services.drive_api_service(user_email=file_info[1])
         batch = drive_service.new_batch_http_request(callback=callback)
@@ -79,12 +108,21 @@ def add_permissions(
         batch.execute()
     except TypeError as e:
         logger.fatal(print(f"Error {e} -> file not in sheet :exploding_head:"))
+    except HttpError as e:
+        logger.fatal(print(f"Error {e} :exploding_head:"))
 
 
 def upload_file(
     file_info: list[str | dict[str, str]],
     file_path: str,
 ) -> None:
+    """Upload file to google drive
+
+    :param file_info: file object
+    :type file_info: list[str  |  dict[str, str]]
+    :param file_path: file local path 
+    :type file_path: str
+    """
     try:
         drive_service = services.drive_api_service(
             user_email=file_info[1],
@@ -120,18 +158,14 @@ def upload_file(
         logger.fatal(print(f"Error {e} :exploding_head:"))
 
 
-def check_file(
-    file_info: list[str | dict[str, str]],
-    file_id: str,
-) -> None:
-    try:
-        add_permissions(file_id=file_id, file_info=file_info)
-    except (HttpError, MediaUploadSizeError) as e:
-        logger.fatal(print(f"Error {e} :exploding_head:"))
-
-
 # iterate through all file
-def upload_files():
+def upload_files(path: str = os.getcwd()) -> None:
+    """Processes and uploads multiple files
+
+    :param path: file to upload path, defaults to os.getcwd()
+    :type path: str, optional
+    """
+    # iterate through all file
     for file in os.listdir(path=path):
         if file:
             file_path = f"{path}/{file}"
@@ -148,7 +182,15 @@ def upload_files():
 
 
 # iterate through all file
-def read_files(email: str, csv_file_name: str):
+def read_files(email: str, csv_file_name: str = "sample.csv") -> None:
+    """Reads drive multiple drive files names and adds necessary shares
+
+    :param email: email of google workspace drive
+    :type email: str
+    :param csv_file_name: csv file with permissions path with name
+    :type csv_file_name: str
+    """
+    # iterate through all file
     for file in get_files(email=email):
         try:
             test = check_file_name_in_csv(
@@ -156,6 +198,6 @@ def read_files(email: str, csv_file_name: str):
                 file_name=file.get("name"),
             )
             logger.info(print(test))
-            check_file(file_info=test, file_id=file.get("id"))
+            add_permissions(file_info=test, file_id=file.get("id"))
         except KeyError as e:
             logger.error(print(f"{e} :interrobang:"))
