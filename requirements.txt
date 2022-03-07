@@ -1,39 +1,5 @@
-attrs @ file:///home/gideon/.cache/pypoetry/artifacts/c4/ee/75/fcd6c2f4c5a1d60b1bcd97014702ca01b3f032fd927d88780b38708409/attrs-21.4.0-py2.py3-none-any.whl
-black @ file:///home/gideon/.cache/pypoetry/artifacts/5b/48/58/74fbe28fc9293402a6710095395ec9df18c04478141fd8e6dd1797296f/black-22.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-cachetools @ file:///home/gideon/.cache/pypoetry/artifacts/42/43/33/cebd2070b751b27b387747cae04ece936bf727f004c87b08ddad799448/cachetools-5.0.0-py3-none-any.whl
-certifi @ file:///home/gideon/.cache/pypoetry/artifacts/89/06/5b/e4bfdf1b8370bdc0a26198e81afa98f68c01a8b1b515c9108c6ad98d8a/certifi-2021.10.8-py2.py3-none-any.whl
-charset-normalizer @ file:///home/gideon/.cache/pypoetry/artifacts/d5/27/31/db4fb74906e3a7f55f720e0079ac1850dd86e30651cdfa5e1f04c53cfa/charset_normalizer-2.0.12-py3-none-any.whl
-click @ file:///home/gideon/.cache/pypoetry/artifacts/b3/fd/d9/1bf6cc4e6a7fdf7eced662eddb1af6d4b10440530b80397b22db17a805/click-8.0.4-py3-none-any.whl
-colorama @ file:///home/gideon/.cache/pypoetry/artifacts/74/2e/50/75ba669a143dfc6521a6899c6d20424a19242688cff8fc8eac2cb9979c/colorama-0.4.4-py2.py3-none-any.whl
-commonmark @ file:///home/gideon/.cache/pypoetry/artifacts/0c/3e/31/72ae961fc7cf12a740a5c8f2a3ad48780c362e5295529c4c62a41eaa7e/commonmark-0.9.1-py2.py3-none-any.whl
-google-api-core @ file:///home/gideon/.cache/pypoetry/artifacts/bd/65/e1/eeeef2e5254c4a7bfe158557725ba294fc67b9f68dea7cc0c9cf2c820e/google_api_core-2.5.0-py2.py3-none-any.whl
-google-api-python-client @ file:///home/gideon/.cache/pypoetry/artifacts/2d/67/c3/ea99dcb50b2279d392c6cb69d4793c7cef2c061b1374fba378e2ce6122/google_api_python_client-2.38.0-py2.py3-none-any.whl
-google-auth @ file:///home/gideon/.cache/pypoetry/artifacts/86/cd/36/ce8365ae0c9e6f0c90fef0ee8a1508a165f157653a71176c94e9d65e85/google_auth-2.6.0-py2.py3-none-any.whl
-google-auth-httplib2 @ file:///home/gideon/.cache/pypoetry/artifacts/70/3f/00/c3a592b76a96e03c8f202a29fd88cefbbd27e13975b0e5266bf7dcd469/google_auth_httplib2-0.1.0-py2.py3-none-any.whl
-google-auth-oauthlib @ file:///home/gideon/.cache/pypoetry/artifacts/9f/30/3e/3cdf46d158eddd2fd12a81e613afdce90b03cd011066d3d122eba20412/google_auth_oauthlib-0.5.0-py2.py3-none-any.whl
-googleapis-common-protos @ file:///home/gideon/.cache/pypoetry/artifacts/3b/c9/65/f4073ff50c5692e5243348bb0a3f86b930c9c80eb0b8cc72c4233f6ae5/googleapis_common_protos-1.55.0-py2.py3-none-any.whl
-httplib2 @ file:///home/gideon/.cache/pypoetry/artifacts/6d/fa/29/3ac62fb971f849ceabf2f0e838c2a518debee9f5dbfa1617b8bde2707b/httplib2-0.20.4-py3-none-any.whl
-idna @ file:///home/gideon/.cache/pypoetry/artifacts/90/36/8c/81eabf6ac88608721ab27f439c9a6b9a8e6a21cc58c59ebb1a42720199/idna-3.3-py3-none-any.whl
-iniconfig @ file:///home/gideon/.cache/pypoetry/artifacts/1d/67/0c/79706e7a41ef01be0b1a38aa3b4ddc9bd800a95ccd8d8dc7de4e090623/iniconfig-1.1.1-py2.py3-none-any.whl
-mypy-extensions @ file:///home/gideon/.cache/pypoetry/artifacts/2f/c6/09/3e1afdcb75322c65b786e63cd7e879b6be3db36dea78ca376db5483ae4/mypy_extensions-0.4.3-py2.py3-none-any.whl
-oauthlib @ file:///home/gideon/.cache/pypoetry/artifacts/95/e6/47/7094c27bbb7f2ce2e9f1aaa01594e6a57184c3f861abe85623bded8680/oauthlib-3.2.0-py3-none-any.whl
-packaging @ file:///home/gideon/.cache/pypoetry/artifacts/d3/1f/90/3f2473250ebd055fe7f0856810677783949fc0d2e5f25bbb4dc00ad0a9/packaging-21.3-py3-none-any.whl
-pathspec @ file:///home/gideon/.cache/pypoetry/artifacts/48/a0/9f/f5128d9e11d591bca7a942dd80ec44f9b2de8294775c68e0b99beeef93/pathspec-0.9.0-py2.py3-none-any.whl
-platformdirs @ file:///home/gideon/.cache/pypoetry/artifacts/ca/49/cb/6716417b220cf04f30770c57523ec2c65000a457566dcedcb4c2ffee23/platformdirs-2.5.1-py3-none-any.whl
-pluggy @ file:///home/gideon/.cache/pypoetry/artifacts/49/3e/55/309ec3705ba3309d817d531002c0a02f643d06c5d5a889ce43236130d5/pluggy-1.0.0-py2.py3-none-any.whl
-protobuf @ file:///home/gideon/.cache/pypoetry/artifacts/27/1c/d4/43ccfda1cd5ba18b1b42f6109fa1da3b6e86dcbf99d28760e643252c87/protobuf-3.19.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-py @ file:///home/gideon/.cache/pypoetry/artifacts/71/fb/64/bfdc833c2055a893883f33deaac35ef2cbdd95d58031cfc69a630f32bf/py-1.11.0-py2.py3-none-any.whl
-pyasn1 @ file:///home/gideon/.cache/pypoetry/artifacts/c2/76/ab/a9803cfd0691d31abaeaaf0c6477e76f673b71f11a2959d0ce3ea20775/pyasn1-0.4.8-py2.py3-none-any.whl
-pyasn1-modules @ file:///home/gideon/.cache/pypoetry/artifacts/16/bd/80/44c2051a4b84112a472b7a8d0cf0f817e818771f012d02f042b684a05d/pyasn1_modules-0.2.8-py2.py3-none-any.whl
-Pygments @ file:///home/gideon/.cache/pypoetry/artifacts/39/2f/e1/71ba9fe7dbfc4b9be1032a3c986049fc97892d3bc1e1bec68a030eca19/Pygments-2.11.2-py3-none-any.whl
-pyparsing @ file:///home/gideon/.cache/pypoetry/artifacts/dd/d9/cf/3501b38e834b80f9ba80633358cced32539bea5dc1e786f4c2b1d2f682/pyparsing-3.0.7-py3-none-any.whl
-pytest @ file:///home/gideon/.cache/pypoetry/artifacts/6e/4d/53/40f7cb6756e53f07c4fe7e490b187a5c1556e42292e30eb2da86d5c774/pytest-7.0.1-py3-none-any.whl
-python-dotenv @ file:///home/gideon/.cache/pypoetry/artifacts/6b/37/6c/56779e11f416c21027bce901621ae7a5fa1c89d2286e1d206e7167f3e5/python_dotenv-0.19.2-py2.py3-none-any.whl
-requests @ file:///home/gideon/.cache/pypoetry/artifacts/d2/b2/c6/a04ce59140c6739203837d8dd0f518e29051b7ab61d2f34d4fd4241d30/requests-2.27.1-py2.py3-none-any.whl
-requests-oauthlib @ file:///home/gideon/.cache/pypoetry/artifacts/80/d7/d7/c91b9cd3edf751cf664d93c1376619758fc1080396ad1e76f5aaf274bb/requests_oauthlib-1.3.1-py2.py3-none-any.whl
-rich @ file:///home/gideon/.cache/pypoetry/artifacts/99/f4/b3/f8f1c908d4074871e683ff397f866fb569ff450d6751072e2f42a3d399/rich-11.2.0-py3-none-any.whl
-rsa @ file:///home/gideon/.cache/pypoetry/artifacts/70/0c/f9/97e3edaca4ca8b69ad6238dbce3ca02c48f17972f71e2ce56b44a6a0e9/rsa-4.8-py3-none-any.whl
-six @ file:///home/gideon/.cache/pypoetry/artifacts/89/b2/f8/fd92b6d5daa0f8889429b2fc67ec21eedc5cae5d531ee2853828ced6c7/six-1.16.0-py2.py3-none-any.whl
-tomli @ file:///home/gideon/.cache/pypoetry/artifacts/62/12/b6/6db9ebb9c8e1a6c5aa8a92ae73098d8119816b5e8507490916621bc305/tomli-2.0.1-py3-none-any.whl
-uritemplate @ file:///home/gideon/.cache/pypoetry/artifacts/2a/d6/11/cd290afd2d0cea58f6e23668fa9814ba18c6fa968dfbd7d280a2f76dc6/uritemplate-4.1.1-py2.py3-none-any.whl
-urllib3 @ file:///home/gideon/.cache/pypoetry/artifacts/1e/1d/9c/5b858776b9634f0a4a7bd2f7ff7751021cdc2604dbc44f794440ba8983/urllib3-1.26.8-py2.py3-none-any.whl
+google-api-python-client=="2.39.0"
+google-auth-httplib2=="0.1.0"
+google-auth-oauthlib=="0.5.0"
+python-dotenv=="0.19.2"
+rich=="11.2.0"
