@@ -77,6 +77,7 @@ def callback(request_id, response: dict[str, Any], exception) -> None:
 def add_permissions(
     file_id: str,
     file_info: list[str | dict[str, str]],
+    email: str,
 ) -> None:
     """Adds permissions in batches to google drive file
 
@@ -84,9 +85,12 @@ def add_permissions(
     :type file_id: str
     :param file_info: file parameters to update
     :type file_info: list[str  |  dict[str, str]]
+    :param email: drive owner email
+    :type email: str
     """
     try:
-        drive_service = services.drive_api_service(user_email=file_info[1])
+        print(file_id)
+        drive_service = services.drive_api_service(user_email=email)
         batch = drive_service.new_batch_http_request(callback=callback)
         # convert string to list with dicts
         for permission in eval(file_info[2]):
@@ -96,6 +100,7 @@ def add_permissions(
                     "role": permission["role"],
                     "emailAddress": permission["emailAddress"],
                 }
+                print(user_permission)
                 batch.add(
                     drive_service.permissions().create(
                         fileId=file_id,
@@ -198,6 +203,7 @@ def read_files(email: str, csv_file_name: str = "sample.csv") -> None:
                 file_name=file.get("name"),
             )
             logger.info(print(test))
-            add_permissions(file_info=test, file_id=file.get("id"))
+            # print(file)
+            add_permissions(file_info=test, file_id=file.get("id"), email=email)
         except KeyError as e:
             logger.error(print(f"{e} :interrobang:"))

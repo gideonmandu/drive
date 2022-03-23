@@ -6,12 +6,12 @@ from services.upload_files import read_files
 
 if __name__ == "__main__":
     load_dotenv()
-    # comment function out to add permissions
+    # comment function call out to add permissions
     read_files(
-        email="admin@businesscomtest.com",
-        csv_file_name="sample.csv",
+        email="azeem.aliyar@copiakenya.com",
+        csv_file_name="azeem@copiauganda.com.csv",
     )
 
-    # comment loop out to save shared files data in csv file
-    # for file in get_files(email="admin@businesscomtest.com"):
-        # write_file_to_csv(file=file, csv_name="sample.csv")
+    # comment for loop out to save shared files data in csv file
+    # for file in get_files(email="azeem@copiauganda.com"):
+    #     write_file_to_csv(file=file, csv_name="azeem@copiauganda.com.csv")
